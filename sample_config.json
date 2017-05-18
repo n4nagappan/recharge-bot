@@ -1,0 +1,5 @@
+{
+  "numbers" : [ "123123123" ],
+  "pay2all_client_id" : "<insert-pay2all-id-here>",
+  "token" : "<insert-pay2all-token-here>"
+}
