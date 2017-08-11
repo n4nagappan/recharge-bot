@@ -5,7 +5,9 @@ var request = require('request-promise');
 var recharge_config = {
   number : null,
   provider_id : "1",
-  amount : "26", // 100 MB 3G/4G DATA for 1 day
+  // amount : "26", // 100 MB 3G/4G DATA for 1 day
+  // amount : "299", // Minimum 2 GB 3G/4G (Jackpot up to 10GB)
+  amount : "175", // 1 GB data
   client_id : config.pay2all_client_id
 };
 
@@ -32,3 +34,4 @@ function recharge( phoneNumber , amount){
 }
 
 module.exports = recharge;
+// recharge("9535271554", "26").then( () => console.log(arguments) , (err) => console.log(err) );
